@@ -3,6 +3,7 @@ import './App.css'
 import Store from './Store'
 import { Address, Restaurant } from './model/restaurant'
 import BestMenu from './BestMenu'
+import Box from './Box'
 
 let data:Restaurant = {
   name: 'test restaurant',
@@ -27,6 +28,8 @@ const App:React.FC = () => {
     <div className="App">
       <Store info={myRestaurant} changeAddress={changeAddress}/>
       <BestMenu name="불고기피자" category="피자" price={1000} showBestMenuName={showBestMenuName}/>
+      <Box name="box1" num="1"/>
+      <Box name="box2" num="2"/>
     </div>
   )
 }
